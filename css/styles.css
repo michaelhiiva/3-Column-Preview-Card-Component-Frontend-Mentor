@@ -36,10 +36,10 @@ body {
 .choices_block div {
   max-width: 90%; 
   margin: 0rem auto;
-  padding: .5rem;
+  padding: 1.5rem;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   .choices_block .row {
     width: 100%;
     display: flex;
