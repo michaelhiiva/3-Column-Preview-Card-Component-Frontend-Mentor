@@ -37,6 +37,7 @@ body {
   max-width: 90%; 
   margin: 0rem auto;
   padding: 1.5rem;
+  border-radius: .25rem;
 }
 
 @media only screen and (min-width: 800px) {
@@ -80,7 +81,7 @@ body {
 }
 
 .choices_btn__learn-more {
-  margin-top: .5rem;
+  margin-top: 5rem;
   font-size: 1.25rem;
   border: 0px;
   border-radius: 1rem;
