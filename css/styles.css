@@ -1,5 +1,98 @@
 /*
+ * Font Families
+ */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@400&display=swap');
+
+/*
+ * Root Configuration
+ */
+
+ :root {
+  --default-font-size: 0.938rem;
+  --first-font-family: 'Lexend Deca', sans-serif;
+  --secondary-font-family: 'Big Shoulders Display', cursive;
+  --primary-bright-orange: hsl(31, 77%, 52%);
+  --primary-dark-cyan: hsl(184, 100%, 22%);
+  --primary-very-dark-cyan: hsl(179, 100%, 13%);
+  /* paragraphs */
+  --neutral-transparent-white-p: hsla(0, 0%, 100%, 0.75);
+  /* background, headings and buttons */
+  --neutral-very-light-gray: hsl(0, 0%, 95%);
+  border: 0;
+}
+
+
+
+body {
+ /*
+ * Not for production use. Only use in smal projects
+ */
+ display: grid;
+ place-content: center;
+ font-size: var(--default-font-size);
+ color: var(--neutral-transparent-white-p);
+}
+
+.choices_block div {
+  max-width: 90%; 
+  margin: 0rem auto;
+  padding: .5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .choices_block .row {
+    width: 100%;
+    display: flex;
+  }
+}
+
+.row .col h1 {
+  font-size: 2.5rem;
+}
+
+.choices_block__first {
+  background-color: var(--primary-bright-orange);
+}
+
+.choices_btn__learn-more-first {
+  color: var(--primary-bright-orange);
+}
+
+.choices_block__second {
+  background-color: var(--primary-dark-cyan);
+}
+
+.choices_btn__learn-more-second {
+  color: var(--primary-dark-cyan);
+}
+
+.choices_block__third {
+  background-color: var(--primary-very-dark-cyan);
+}
+
+.choices_btn__learn-more-third {
+  color: var(--primary-very-dark-cyan);
+}
+
+.choices__icon {
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+}
+
+.choices_btn__learn-more {
+  margin-top: .5rem;
+  font-size: 1.25rem;
+  border: 0px;
+  border-radius: 1rem;
+  background-color: var(--neutral-transparent-white-p);
+}
+
+.choices_btn__learn-more:hover {
+  background-color: white;
+}
+
+/*
  * Default attribution styles which come with FrontEnd Mentor
  */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+ .attribution { color: black; font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
